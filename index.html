@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN+Guides&display=swap"
+        rel="stylesheet">
+    <title>Robotics Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="information-view">
+            <div class="timer">
+                <div class="timer-controls">
+                    <div class="btn">
+                        <button class="start">▶</button>
+                        <button class="reset">↺</button>
+                    </div>
+                    <div class="timer-value">
+                        <div class="value">
+                            <h1 id="hours">00</h1>
+                            <h1 id="minutes">00</h1>
+                            <h1 id="seconds">00</h1>
+                        </div>
+                        <div class="timer-value-name">
+                            <p>Hours</p>
+                            <p>Minutes</p>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-view">
+                <h4 class="rover-status">🔋Battery: 100%</h4>
+                <h4 class="rover-status">⚡ Speed : 24m/s</h4>
+            </div>
+        </div>
+        <div class="dashboard-view">
+            <div class="live-cam">
+                <h2>Live Camera Feed</h2>
+                <img src="http://10.73.156.162:8080/video" alt="">
+            </div>
+            <div class="image-description">
+                <h2>Identified image</h2>
+                <div class="description">
+                    <h3>Image Name:</h3>
+                    <p>apple</p>
+                </div>
+
+                <img src="lecture-68790e08aa7b36a500957e8c-1253.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
